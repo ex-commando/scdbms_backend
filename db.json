@@ -1,0 +1,210 @@
+{
+  "users": [
+    {
+      "id": 1777115928601,
+      "username": "admin",
+      "password": "$2b$10$qdjT3QvWtE9svo.01gx.kOVeZy09a.1ocycccC31t0CJLybkSknIm",
+      "full_name": "System Administrator",
+      "role": "admin",
+      "permissions": [
+        "all"
+      ]
+    },
+    {
+      "id": 1777117614079,
+      "username": "staff_test",
+      "password": "$2b$10$G4GXZ2GKXjDaXRa3j9ZjseViZeRXQettsaJsQkZ8u09z4qoYQ7Gv6",
+      "full_name": "Staff Test",
+      "role": "staff",
+      "permissions": [
+        "add_resident"
+      ],
+      "created_at": "2026-04-25T11:46:54.079Z"
+    }
+  ],
+  "residents": [
+    {
+      "id": 1777116242555,
+      "house_number": "1",
+      "street_name": "Andora",
+      "occupant_name": "Amanda Onyebula",
+      "occupant_type": "Owner",
+      "email": "mandy@gmail.com",
+      "phone": "08120109901",
+      "created_at": "2026-04-25T11:24:02.555Z"
+    },
+    {
+      "id": 1777122765313,
+      "house_number": "49",
+      "street_name": "Pomona",
+      "occupant_name": "Francis Adegbe",
+      "occupant_type": "Tenant",
+      "email": "Francismission61@gmail.com",
+      "phone": "07068473984",
+      "created_at": "2026-04-25T13:12:45.313Z"
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": 1777190857652,
+      "userId": 1777115928601,
+      "username": "admin",
+      "action": "LOGIN",
+      "details": "User authenticated successfully",
+      "timestamp": "2026-04-26T08:07:37.652Z",
+      "hash": "3208cf8bbe6668416e53f3d9205ae103b8416cf3b7662d71c3c6fdf2e03cac5f"
+    },
+    {
+      "id": 1777151777430,
+      "userId": 1777115928601,
+      "username": "admin",
+      "action": "LOGIN",
+      "details": "User authenticated successfully",
+      "timestamp": "2026-04-25T21:16:17.430Z",
+      "hash": "4d18ebfab2f00409ae27d041df746b18d77374b26f465942bb5c99624cb6cd69"
+    },
+    {
+      "id": 1777125542977,
+      "userId": 1777115928601,
+      "username": "admin",
+      "action": "LOGIN",
+      "details": "User authenticated successfully",
+      "timestamp": "2026-04-25T13:59:02.977Z",
+      "hash": "e0b16886922178cf39675a6b4b9c9e4fc5e8de577a98950dc266704738d0d882"
+    },
+    {
+      "id": 1777125442095,
+      "userId": 1777115928601,
+      "username": "admin",
+      "action": "LOGOUT",
+      "details": "User logged out",
+      "timestamp": "2026-04-25T13:57:22.095Z",
+      "hash": "521e790b7f8744d9bfb306dd012d4067cdcf585b72c82f7f453ed1567a6c77dc"
+    },
+    {
+      "id": 1777125424904,
+      "userId": 1777115928601,
+      "username": "admin",
+      "action": "LOGIN",
+      "details": "User authenticated successfully",
+      "timestamp": "2026-04-25T13:57:04.904Z",
+      "hash": "34a9f518567f1f068b5c6353d26ea040c684ab9e2bfba2e04922bf43239f24d3"
+    },
+    {
+      "id": 1777125417956,
+      "userId": 1777115928601,
+      "username": "admin",
+      "action": "LOGOUT",
+      "details": "User logged out",
+      "timestamp": "2026-04-25T13:56:57.956Z",
+      "hash": "0fae04deb46394808ea7231e59bd86b8d36f08ca93c4cbbb3df40ab48aa31ad8"
+    },
+    {
+      "id": 1777125396840,
+      "userId": 1777115928601,
+      "username": "admin",
+      "action": "LOGIN",
+      "details": "User authenticated successfully",
+      "timestamp": "2026-04-25T13:56:36.840Z",
+      "hash": "0d8a221a5d7737219fb9746fdb81ce387348ef3d6323462374d1f98e7766a14d"
+    },
+    {
+      "id": 1777124792491,
+      "userId": 1777115928601,
+      "username": "admin",
+      "action": "LOGOUT",
+      "details": "User logged out",
+      "timestamp": "2026-04-25T13:46:32.491Z",
+      "hash": "f572af67636b7dffc4562a1763798f7c1ce925206e48558d45186371c9c23804"
+    },
+    {
+      "id": 1777123141637,
+      "userId": 1777115928601,
+      "username": "admin",
+      "action": "BROADCAST_EMAIL",
+      "details": "Dispatched mail to 1 recipients. Subject: Test",
+      "timestamp": "2026-04-25T13:19:01.637Z",
+      "hash": "01d2265d1393164c893ac69f2eef78cd5ca0f722278a87124af43af81c7105ab"
+    },
+    {
+      "id": 1777123125806,
+      "userId": 1777115928601,
+      "username": "admin",
+      "action": "LOGIN",
+      "details": "User authenticated successfully",
+      "timestamp": "2026-04-25T13:18:45.806Z",
+      "hash": "3672193a71c3c812c8eede42b8e7e40b4f197b6541db1fa95fa8d5918df62cd2"
+    },
+    {
+      "id": 1777122798150,
+      "userId": 1777115928601,
+      "username": "admin",
+      "action": "BROADCAST_EMAIL",
+      "details": "Sent broadcast to 1 residents in Pomona",
+      "timestamp": "2026-04-25T13:13:18.150Z",
+      "hash": "f7a332d926f48ffe642bbf9aedbad03a779d6aab7f89afdb9edf749df2b61334"
+    },
+    {
+      "id": 1777122765314,
+      "userId": 1777115928601,
+      "username": "admin",
+      "action": "BULK_UPLOAD",
+      "details": "Synchronized 2 records via CSV",
+      "timestamp": "2026-04-25T13:12:45.314Z",
+      "hash": "7663eb28df851ac13df38ef2023dbcaa219726721415163360bf4f2ff6421947"
+    },
+    {
+      "id": 1777122750972,
+      "userId": 1777115928601,
+      "username": "admin",
+      "action": "LOGIN",
+      "details": "User authenticated successfully",
+      "timestamp": "2026-04-25T13:12:30.972Z",
+      "hash": "027f3c0a3af70dd53fb9fb761d396da50940de5dc5f0dd860d888b045231cacd"
+    },
+    {
+      "id": 1777122618196,
+      "userId": 1777115928601,
+      "username": "admin",
+      "action": "LOGIN",
+      "details": "User authenticated successfully",
+      "timestamp": "2026-04-25T13:10:18.196Z",
+      "hash": "8d50a58f0aa23060db3d64ad89d61db6acd468cc7c4aa7df0d5427d7212fd5d2"
+    },
+    {
+      "id": 1777119307305,
+      "userId": 1777115928601,
+      "username": "admin",
+      "action": "LOGIN",
+      "details": "User authenticated successfully",
+      "timestamp": "2026-04-25T12:15:07.305Z",
+      "hash": "dd2c7056a7cea65588a4d22945d12623943f8da6312e9d1168febf6c47915a61"
+    },
+    {
+      "id": 1777117549459,
+      "userId": 1777115928601,
+      "username": "admin",
+      "action": "LOGIN",
+      "details": "User authenticated successfully",
+      "timestamp": "2026-04-25T11:45:49.459Z",
+      "hash": "5123708e60633fd206951f7e998aa43497ef0528d76e0b5a1a7ff4dd104b45e6"
+    }
+  ],
+  "guards": [
+    {
+      "name": "Francis  Adegbe",
+      "age": "24",
+      "state_of_origin": "Federal Capital Territory",
+      "lga": "abaji",
+      "phone": "07068473984",
+      "resident_id": "1777122765313",
+      "guarantor1_name": "Guarantor 1",
+      "guarantor1_phone": "08107790775",
+      "guarantor2_name": "Guarantor 1",
+      "guarantor2_phone": "07068473984",
+      "image_url": "/uploads/4023faf82cbe5f251e36aaf391f5d538",
+      "id": 1777190932916,
+      "created_at": "2026-04-26T08:08:52.916Z"
+    }
+  ]
+}
