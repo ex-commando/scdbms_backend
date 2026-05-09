@@ -33,12 +33,18 @@ if (!fs.existsSync(uploadsDir)) {
 }
 
 // Middleware
+const allowedOrigins = [
+    'http://localhost:5173',
+    'http://localhost:3000',
+    process.env.FRONTEND_URL
+].filter(Boolean);
+
 app.use(cors({
     origin: (origin, callback) => {
-        if (!origin || origin.includes('localhost') || origin.includes('127.0.0.1')) {
+        if (!origin || allowedOrigins.includes(origin)) {
             callback(null, true);
         } else {
-            callback(new Error('Not allowed by CORS'));
+            callback(new Error('Not allowed by CORS: ' + origin));
         }
     },
     credentials: true
@@ -53,9 +59,10 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
     cookie: {
-        secure: false, 
+        secure: process.env.NODE_ENV === 'production',
         httpOnly: true,
-        maxAge: 24 * 60 * 60 * 1000 
+        sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
+        maxAge: 24 * 60 * 60 * 1000
     }
 }));
 
